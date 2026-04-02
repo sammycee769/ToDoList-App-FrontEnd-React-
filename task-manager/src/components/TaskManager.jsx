@@ -27,7 +27,7 @@ const TaskManager = () => {
         text: input.trim(),
         completed: false
     }
-    setTasks([...tasks, newTask]);
+    setTasks((prev)=>[...prev, newTask]);
     setInput("");
    };
 
